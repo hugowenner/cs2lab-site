@@ -1,0 +1,154 @@
+/* estilo/maopbonham.css */
+
+/* Reset e fontes básicas */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container principal */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Hero/banner */
+.hero {
+  background-image: url('../imagens/maopbonham-banner.jpg'); /* Atualize se necessário */
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.hero .content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Seção Sobre */
+.sobre {
+  text-align: center;
+  background-color: white;
+  padding: 30px 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.foto-membro {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid #1d72b8;
+}
+
+.sobre h2 {
+  font-size: 2rem;
+  color: #1d72b8;
+  margin-bottom: 10px;
+}
+
+.sobre p {
+  margin: 10px 0;
+  color: #555;
+}
+
+/* Botão */
+.cta-btn {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #1d72b8;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #155a8a;
+  transform: scale(1.05);
+}
+
+/* Estatísticas */
+.stats-membro {
+  margin-top: 30px;
+  background-color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.stats-membro h2 {
+  font-size: 2rem;
+  color: #1d72b8;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.stats-membro ul {
+  list-style: none;
+  padding: 0;
+}
+
+.stats-membro li {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #444;
+  text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .sobre h2,
+  .stats-membro h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta-btn {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+}
