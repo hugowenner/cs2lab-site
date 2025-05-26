@@ -1,0 +1,171 @@
+/* Estilo geral do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e24; /* Cor de fundo escura */
+    color: #f0f0f0; /* Cor do texto clara */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #111;
+    padding: 20px 0;
+    border-bottom: 3px solid #ff8c00; /* Laranja inspirado no CS2 */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    padding: 20px;
+}
+
+section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #2a2a30;
+    border-radius: 8px;
+}
+
+/* Estilo dos botões */
+.discord-button, .discord-button-copy {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.discord-button {
+    background-color: #5865F2; /* Cor oficial do Discord */
+    color: white;
+}
+
+.discord-button:hover {
+    background-color: #4752c4;
+}
+
+.discord-button-copy {
+    background-color: #ff8c00; /* Laranja CS2 */
+    color: white;
+    border: none;
+}
+
+.discord-button-copy:hover {
+    background-color: #cc7000;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #111;
+    color: #aaa;
+    padding: 15px 0;
+    /* Removido o position fixed para não sobrepor o conteúdo */
+    margin-top: 40px; 
+}
+
+
+/* ======= NOVOS ESTILOS PARA AS REGRAS ======== */
+
+.rules {
+    text-align: left; /* Alinha o texto das regras à esquerda para melhor leitura */
+}
+
+.rules h2 {
+    text-align: center; /* Mantém o título principal centralizado */
+    margin-bottom: 25px;
+}
+
+.rule-item {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444; /* Linha para separar as regras */
+}
+
+/* Remove a linha da última regra */
+.rules-list .rule-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.rules h3 {
+    color: #ff8c00; /* Cor de destaque laranja */
+    margin-bottom: 5px;
+}
+
+.rules p {
+    line-height: 1.6; /* Melhora o espaçamento entre linhas */
+}
+
+.rules .intro, .rules .conclusion {
+    text-align: center; /* Centraliza a introdução e a conclusão */
+    font-size: 1.1em;
+}
+
+.rules .conclusion {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #1e1e24;
+    border-radius: 5px;
+}
+
+/* Estilo para os nomes de canais, como #avisos */
+code {
+    background-color: #111;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-family: Consolas, monospace;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #111;
+    padding: 15px 0; /* Ajustado o padding */
+    border-bottom: 3px solid #ff8c00;
+}
+
+/* Novo container para o logo e o título */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espaço entre o logo e o texto */
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilo para o logo */
+.header-logo {
+    height: 70px; /* Defina a altura desejada para o seu logo */
+    width: auto; /* Mantém a proporção da imagem */
+}
+
+/* Container para o texto do cabeçalho */
+.title-container {
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em; /* Tamanho do título ajustado */
+}
+
+header p {
+    margin: 0;
+    color: #bbb;
+}
+
+/* ===== ESTILOS ANTIGOS (para referência, não precisa copiar) ==== */
+/* ... O resto do seu CSS continua aqui ... */ 
